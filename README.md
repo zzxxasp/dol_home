@@ -1,1 +1,1 @@
-Cloud code project for 大航海时代ol助手. Cloud Code Guide: https://cn.avoscloud.com/docs/cloud_code_guide.html
+Cloud code project for 大航海时代ol助手. Cloud Code Guide: https://leancloud.cn/docs/cloud_code_guide.html

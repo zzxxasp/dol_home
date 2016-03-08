@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>大航海时代ol</title>
+    <meta name="description" content="大航海时代">
+    <meta name="keywords" content="大航海时代ol">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-title" content="大航海时代ol" />
+    <!--  库文件引入  -->
+    <script type="text/javascript" src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/leancloud-1.0.0-rc7.js"></script>
+    <script src="/lib/semantic.js"></script>
+    <link rel="stylesheet" type="text/css" href="/lib/semantic.css">
+    <!-- 本地文件引入  -->
+    <script src="/js/trove_detail.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+    <!--图片载入测试-->
+        <div class="ui container" style="margin-top:30px;margin-bottom:30px;">
+        <div class="ui piled segment accordion" style="margin:20px,20px,20px,20px;">
+            <div class="ui top attached label" id="labels">海洋生物</div>
+            <div class="ui eight doubling  cards" id="user_list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--加载器-->
+    <div class="ui active inverted dimmer" id="loading">
+        <div class="ui large text loader">正在加载中...</div>
+    </div>
+</body>
+</html>

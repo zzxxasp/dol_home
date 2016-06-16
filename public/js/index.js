@@ -5,8 +5,28 @@ var currentUser = AV.User.current();
 if (currentUser) {
     console.log(currentUser);
     var avatarPhoto = currentUser.get('headPic');
-    var url = avatarPhoto.thumbnailURL(100,100);
+    var url = avatarPhoto.thumbnailURL(100, 100);
     console.log(url);
 } else {
     //如果没有则显示登录和注册的连接
 }
+
+$(document)
+    .ready(function () {
+        // fix menu when passed
+        $('.masthead')
+            .visibility({
+                once: false,
+                onBottomPassed: function () {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function () {
+                    $('.fixed.menu').transition('fade out');
+                }
+            });
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item');
+
+    });
